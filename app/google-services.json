@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "496152791782",
+    "firebase_url": "https://cnd-app.firebaseio.com",
+    "project_id": "cnd-app",
+    "storage_bucket": "cnd-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496152791782:android:c420beffeb7a71d6",
+        "android_client_info": {
+          "package_name": "com.example.adrian.cndapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496152791782-d4je5baonovukkrma31e4kjm1urc6m23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adrian.cndapp",
+            "certificate_hash": "d12676986557242b35ef0243b784a22fd0575b64"
+          }
+        },
+        {
+          "client_id": "496152791782-iittop33q3ci9s040kide4fp0p0bt7h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQvjkIxDBm71ch8xtcHPB5vAM3t8vb628"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496152791782-iittop33q3ci9s040kide4fp0p0bt7h9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
