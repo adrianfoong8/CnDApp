@@ -5,83 +5,72 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/ic_app_round"
-            android:contentDescription="@string/description_app_icon"/>
+            android:src="@drawable/ic_app_round" />
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/prompt_email"
+                android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"
-                android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/colorPrimaryText" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-                android:id="@+id/password"
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/old_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusableInTouchMode="true"
-                android:hint="@string/prompt_password"
-                android:imeActionId="@+id/login"
-                android:imeOptions="actionUnspecified"
+                android:hint="@string/hint_password"
                 android:inputType="textPassword"
-                android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/colorPrimaryText" />
+        </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/register_button"
-            style="?android:textAppearanceSmall"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:text="@string/action_register"
+            android:layout_height="@dimen/btn_height"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/btn_register"
             android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button_reset_password"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginTop="20dp"
             android:background="@null"
-            android:text="@string/action_forgot_password"
-            android:textAllCaps="false"
-            android:textColor="@color/colorSecondaryText" />
-
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@null"
-            android:text="@string/action_to_login"
+            android:text="@string/btn_login_long"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimaryText" />
-
     </LinearLayout>
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center|bottom"
-        android:layout_marginBottom="20dp"
-        android:visibility="gone" />
-
 </android.support.constraint.ConstraintLayout>

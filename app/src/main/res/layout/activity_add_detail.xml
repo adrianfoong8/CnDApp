@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/pImageIv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorDivider"
+            android:src="@drawable/ic_action_add_image" />
+
+        <EditText
+            android:id="@+id/pTitleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter title"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pDescriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter description"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/pAddressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter address"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/pContactPersonEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter contact person"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pPhoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter phone"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pFaxEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter fax"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pEmailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter email"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pWebsiteEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter website"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pFacebookEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Enter facebook"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/pAddBtn"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Add" />
+    </LinearLayout>
+</ScrollView>

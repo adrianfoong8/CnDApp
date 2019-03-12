@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword;
-    private Button buttonLogin, buttonRegister, buttonResetPassword;
+    private Button btnLogin, btnRegister;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
 
@@ -31,28 +31,20 @@ public class RegisterActivity extends AppCompatActivity {
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        buttonLogin = (Button) findViewById(R.id.login_button);
-        buttonRegister = (Button) findViewById(R.id.register_button);
+        btnLogin = (Button) findViewById(R.id.btn_login);
+        btnRegister = (Button) findViewById(R.id.btn_register);
         inputEmail = (EditText) findViewById(R.id.email);
-        inputPassword = (EditText) findViewById(R.id.password);
+        inputPassword = (EditText) findViewById(R.id.old_password);
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
-        buttonResetPassword = (Button) findViewById(R.id.button_reset_password);
 
-        buttonResetPassword.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(RegisterActivity.this, ResetPasswordActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
             }
         });
 
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
+        btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

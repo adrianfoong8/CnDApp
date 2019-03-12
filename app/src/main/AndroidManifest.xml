@@ -11,17 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".PaymentDetailActivity"
+            android:label="Transaction Detail" />
+        <activity
+            android:name=".PayPalActivity"
+            android:label="PayPal" />
+        <activity
+            android:name=".AddDetailActivity"
+            android:label="New" />
+        <activity android:name=".MoreDetailActivity" />
         <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/action_forgot_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/nav_about_us"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
